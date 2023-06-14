@@ -13,45 +13,59 @@
 /* BASE RULES */
 /**************/
 
-$bodyColor0: #ffffff;
-$bodyColor1: #ffffff;
-$bodyColor2: #de690c;
-$bodyColor3: #dddddd;
-$bodyColor4: #cfc1b6;
-$bodyColor5: #cfbcb1;
-$bodyColor6: #cccccc;
-$bodyColor7: #bfbfbf;
-$bodyColor8: #b350af;
-$bodyColor9: #8a3199;
-$bodyColor10: #6c655e;
-$bodyColor11: #16e19c;
-$bodyColor12: #53483f;
-$bodyColor13: #453b34;
-$bodyColor14: #3fc4bb;
-$bodyColor15: #333333;
-$bodyColor16: #333333;
-$bodyColor17: #281b12;
-$bodyColor18: #22004a;
-$bodyColor19: #1b1b1b;
-$bodyColor20: #191919;
-$bodyColor21: #160f0a;
-$bodyColor22: #131313;
-$bodyColor23: #121e00;
-$bodyColor24: #111111;
-$bodyColor25: #102c06;
-$bodyColor26: #0f35ba;
-$bodyColor27: #0e0e0e;
-$bodyColor28: #070707;
-$bodyColor29: #000000;
-$bodyColor30: #000c00;
-$bodyColor31: #000000;
-$bodyColor32: hsl(180, 100%, 2%);
-$bodyColor33: hsla(180, 100%, 100%, .025);
-$bodyColor34: hsla(23, 89%, 5%, .4);
-$bodyColor35: rgb(63, 44, 37);
-$bodyColor36: rgba(255, 255, 255, 0.05);
-$bodyColor37: rgba(255, 255, 255, 0.08);
-$bodyColor38: rgba(255, 255, 255, .6);
+$color0: #000000;
+$color1: #bfbfbf;
+$color2: rgb(63, 44, 37);
+$color3: #dddddd;
+$color4: #333333;
+$color5: #070707;
+$color6: #333333;
+$color7: #333333;
+$color8: #333333;
+$color9: #000c00;
+$color10: #dddddd;
+$color11: #121e00;
+$color12: #22004a;
+$color13: #000000;
+$color14: #de690c;
+$color15: #16e19c;
+$color16: #ffffff;
+$color17: #ffffff;
+$color18: #6c655e;
+$color19: #6c655e;
+$color20: #cfbcb1;
+$color21: #281b12;
+$color22: rgba(255, 255, 255, 0.08);
+$color23: rgba(255, 255, 255, 0.05);
+$color24: #8a3199;
+$color25: #3fc4bb;
+$color26: #0f35ba;
+$color27: rgba(255, 255, 255, .6);
+$color28: #1b1b1b;
+$color29: #102c06;
+$color30: #ffffff;
+$color31: #ffffff;
+$color32: #191919;
+$color33: hsl(180, 100%, 2%);
+$color34: hsla(180, 100%, 100%, .025);
+$color35: hsla(180, 100%, 100%, .025);
+$color36: hsla(23, 89%, 5%, .4);
+$color37: #b350af;
+$color38: #000000;
+$color39: #111111;
+$color40: #000000;
+$color41: #0e0e0e;
+$color42: #ccc;
+$color43: #333;
+$color44: #b350af;
+$color45: #ccc;
+$color46: #131313;
+$color47: #ffffff;
+$color48: #160f0a;
+$color49: #281b12;
+$color50: #cfc1b6;
+$color51: #53483f;
+$color52: #453b34;
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
@@ -61,9 +75,9 @@ html {
 }
 
 body {
-  background: $bodyColor29;
+  background: $color0;
   font-family: -system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  color: $bodyColor7;
+  color: $color1;
   line-height: 1.7;
   font-weight: 400;
   font-size: 18px;
@@ -110,7 +124,7 @@ h2 {
 	    vertical-align: middle;
 	    width: 46px;
 	    height: 1px;
-	    background: $bodyColor35;
+	    background: $color2;
 	    margin: 0px 30px;
 	}
 }
@@ -121,7 +135,7 @@ h3 {
 
 h4 {
   font-size: 18px;
-  color: $bodyColor3;
+  color: $color3;
 }
 
 p {
@@ -133,26 +147,26 @@ table {
 }
 
 table tr {
-	border-top: 1px solid $bodyColor15ccc;
+	border-top: 1px solid $color4;
 	background-color: white;
 	margin: 0;
 	padding: 0;
 }
 
 table tr:nth-child(2n) {
-	background-color: $bodyColor28;
+	background-color: $color5;
 }
 
 table tr th {
 	font-weight: bold;
-	border: 1px solid $bodyColor15ccc;
+	border: 1px solid $color6;
 	text-align: left;
 	margin: 0;
 	padding: 6px 13px;
 }
 
 table tr td {
-	border: 1px solid $bodyColor15ccc;
+	border: 1px solid $color7;
 	text-align: left;
 	margin: 0;
 	padding: 6px 13px;
@@ -184,16 +198,16 @@ table tr td :last-child {
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid $bodyColor15;
+  border: 1px solid $color8;
   border-radius: 4px;
   box-sizing: border-box;
   font-size: 18px;
-  background-color: $bodyColor293ff;
+  background-color: $color9;
 }
 
 .share-box {
   font-weight: bold;
-  color: $bodyColor3;
+  color: $color10;
 }
 
 span[data-pullquote] {
@@ -421,7 +435,7 @@ nav {
     color: $gray;
     font-size: 22px;
     font-style: italic;
-    background-color: $bodyColor23;
+    background-color: $color11;
   }
 
   .you-may-like{
@@ -431,7 +445,7 @@ nav {
     color: $gray;
     font-size: 22px;
     font-style: italic;
-    background-color: $bodyColor18;;
+    background-color: $color12;;
   }
 
   .comments {
@@ -467,7 +481,7 @@ footer {
 }
 
 body:after {
-    background: linear-gradient(to right, $bodyColor29fff   0, $bodyColor2   33%, $bodyColor11   66%, $bodyColor0 100%);
+    background: linear-gradient(to right, $color13   0, $color14   33%, $color15   66%, $color16 100%);
     width: 100%;
     height: 5px;
     top: 0;
@@ -477,7 +491,7 @@ body:after {
 }
 
 #bar {
-    background: $bodyColor0;
+    background: $color17;
     height: 7px;
     background-size: cover;
     background-position: left 60%;
@@ -508,17 +522,17 @@ body:after {
 
 .author_title{
   text-align: center;
-  color: $bodyColor10;
+  color: $color18;
   letter-spacing: 2px;
 }
 
 .post_date{
   text-align: center;
-  color: $bodyColor10;
+  color: $color19;
 }
 
 .cd-container a {
-  color: $bodyColor5;
+  color: $color20;
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
 }
@@ -564,7 +578,7 @@ Modules - reusable parts of our design
   left: 18px;
   height: 100%;
   width: 4px;
-  background: $bodyColor17;
+  background: $color21;
 }
 @media only screen and (min-width: 1170px) {
   #cd-timeline {
@@ -611,7 +625,7 @@ Modules - reusable parts of our design
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  box-shadow: 0 0 0 4px white, inset 0 2px 0 $bodyColor37, 0 3px 0 4px $bodyColor36;
+  box-shadow: 0 0 0 4px white, inset 0 2px 0 $color22, 0 3px 0 4px $color23;
 }
 .cd-timeline-img img {
   display: block;
@@ -625,13 +639,13 @@ Modules - reusable parts of our design
   border-radius: 10px;
 }
 .cd-timeline-img.cd-picture {
-  background: $bodyColor9;
+  background: $color24;
 }
 .cd-timeline-img.cd-movie {
-  background: $bodyColor14;
+  background: $color25;
 }
 .cd-timeline-img.cd-location {
-  background: $bodyColor26;
+  background: $color26;
 }
 
 .chip {
@@ -639,17 +653,17 @@ Modules - reusable parts of our design
     height: 32px;
     font-size: 14px;
     font-weight: 500;
-    color: $bodyColor38;
+    color: $color27;
     line-height: 32px;
     padding: 0 12px;
     border-radius: 16px;
-    background-color: $bodyColor19;
+    background-color: $color28;
     margin-bottom: 5px;
     margin-right: 5px;
 }
 
 .yellow.lighten-2 {
-    background-color: $bodyColor25 !important;
+    background-color: $color29 !important;
 }
 
 #gh-latest{
@@ -658,9 +672,9 @@ Modules - reusable parts of our design
 }
 
 .text-link {
-    color: $bodyColor0;
+    color: $color30;
     text-decoration: none;
-    border-bottom: 1px dotted $bodyColor0;
+    border-bottom: 1px dotted $color31;
 }
 
 //carbon ads
@@ -676,8 +690,8 @@ Modules - reusable parts of our design
   max-width: 270px;
   border-radius: 4px;
   text-align: center;
-  border: dashed 1px $bodyColor20;
-  background-color: $bodyColor32;
+  border: dashed 1px $color32;
+  background-color: $color33;
   font-size: var(--font-size);
   line-height: 1.5;
   width: 100%;
@@ -726,7 +740,7 @@ Modules - reusable parts of our design
 .carbon-poweredby {
   display: block;
   padding: 10px var(--font-size);
-  background: repeating-linear-gradient(-45deg, transparent, transparent 5px, $bodyColor33 5px, $bodyColor33 10px) $bodyColor34;
+  background: repeating-linear-gradient(-45deg, transparent, transparent 5px, $color34 5px, $color35 10px) $color36;
   text-transform: uppercase;
   letter-spacing: .5px;
   font-weight: 600;
@@ -743,24 +757,24 @@ Modules - reusable parts of our design
   font-size: 14.5px;
   padding: 2px 13px;
   border: none;
-  background-color: $bodyColor8;
+  background-color: $color37;
   border-radius: 50px;
-  color: $bodyColor29;
+  color: $color38;
 }
 
 .pagination a, .pagination span {
   padding: 7px 18px;
-  border: 1px solid $bodyColor24;
+  border: 1px solid $color39;
   margin-left: -2px;
   margin-right: -2px;
-  background-color: $bodyColor29fff;
+  background-color: $color40;
   display: inline-block;
 }
 
 .pagination a {    
   &:hover {
-      background-color: $bodyColor27;
-      color: $bodyColor6;
+      background-color: $color41;
+      color: $color42;
   }
 }
 
@@ -808,14 +822,14 @@ Modules - reusable parts of our design
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid $bodyColor15;
+  border: 1px solid $color43;
   border-radius: 4px;
   box-sizing: border-box;
 }
 
 .subscribeBtn {
   width: 30%;
-  background-color: $bodyColor8;
+  background-color: $color44;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -826,10 +840,10 @@ Modules - reusable parts of our design
 }
 
 .tinyletterForm {
-  border: 1px solid $bodyColor15;
+  border: 1px solid $color45;
   padding: 3px;
   text-align: center;
-  background: $bodyColor22;
+  background: $color46;
   margin: 8px;
   border-radius: 5px;
 }
@@ -837,7 +851,7 @@ Modules - reusable parts of our design
 .btn-subscribe {
   line-height: 20px;
   text-decoration: none;
-  background: $bodyColor000015;
+  background: $color4715;
   border: none;
   font-size: 12px;
   padding: 0px 7px;
@@ -941,10 +955,10 @@ Modules - reusable parts of our design
 .cd-timeline-content {
   position: relative;
   margin-left: 60px;
-  background: $bodyColor21;
+  background: $color48;
   border-radius: 0.25em;
   padding: 1em;
-  box-shadow: 0 3px 0 $bodyColor17;
+  box-shadow: 0 3px 0 $color49;
 }
 .cd-timeline-content:after {
   content: "";
@@ -952,7 +966,7 @@ Modules - reusable parts of our design
   clear: both;
 }
 .cd-timeline-content h2 {
-  color: $bodyColor4;
+  color: $color50;
 }
 .cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
   font-size: 13px;
@@ -968,12 +982,12 @@ Modules - reusable parts of our design
 .cd-timeline-content .cd-read-more {
   float: right;
   padding: .8em 1em;
-  background: $bodyColor12;
+  background: $color51;
   color: white;
   border-radius: 0.25em;
 }
 .no-touch .cd-timeline-content .cd-read-more:hover {
-  background-color: $bodyColor13;
+  background-color: $color52;
 }
 .cd-timeline-content .cd-date {
   float: left;
