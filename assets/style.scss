@@ -93,7 +93,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: -system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  color: $darkerGray;
+  color: $lightGray;
   font-weight: bold;
 
   line-height: 1.7;
@@ -148,7 +148,7 @@ table {
 
 table tr {
 	border-top: 1px solid $color4;
-	background-color: white;
+	background-color: black;
 	margin: 0;
 	padding: 0;
 }
@@ -625,7 +625,7 @@ Modules - reusable parts of our design
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  box-shadow: 0 0 0 4px white, inset 0 2px 0 $color22, 0 3px 0 4px $color23;
+  box-shadow: 0 0 0 4px black, inset 0 2px 0 $color22, 0 3px 0 4px $color23;
 }
 .cd-timeline-img img {
   display: block;
@@ -830,7 +830,7 @@ Modules - reusable parts of our design
 .subscribeBtn {
   width: 30%;
   background-color: $color44;
-  color: white;
+  color: black;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
@@ -983,7 +983,7 @@ Modules - reusable parts of our design
   float: right;
   padding: .8em 1em;
   background: $color51;
-  color: white;
+  color: black;
   border-radius: 0.25em;
 }
 .no-touch .cd-timeline-content .cd-read-more:hover {
@@ -1002,7 +1002,7 @@ Modules - reusable parts of our design
   height: 0;
   width: 0;
   border: 7px solid transparent;
-  border-right: 7px solid white;
+  border-right: 7px solid black;
 }
 @media only screen and (min-width: 768px) {
   .cd-timeline-content h2 {
@@ -1028,7 +1028,7 @@ Modules - reusable parts of our design
     top: 24px;
     left: 100%;
     border-color: transparent;
-    border-left-color: white;
+    border-left-color: black;
   }
   .cd-timeline-content .cd-read-more {
     float: left;
@@ -1049,7 +1049,7 @@ Modules - reusable parts of our design
     left: auto;
     right: 100%;
     border-color: transparent;
-    border-right-color: white;
+    border-right-color: black;
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
     float: right;
