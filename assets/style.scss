@@ -9,6 +9,10 @@
 @import "variables";
 // Syntax highlighting @import is at the bottom of this file
 
+/**************/
+/* BASE RULES */
+/**************/
+
 $bodyColor0: #ffffff;
 $bodyColor1: #ffffff;
 $bodyColor2: #de690c;
@@ -48,10 +52,6 @@ $bodyColor35: rgb(63, 44, 37);
 $bodyColor36: rgba(255, 255, 255, 0.05);
 $bodyColor37: rgba(255, 255, 255, 0.08);
 $bodyColor38: rgba(255, 255, 255, .6);
-
-/**************/
-/* BASE RULES */
-/**************/
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
