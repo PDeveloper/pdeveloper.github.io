@@ -13,17 +13,22 @@
 /* BASE RULES */
 /**************/
 
-$color0: #000000;
-$color1: #bfbfbf;
-$color2: rgb(63, 44, 37);
-$color3: #dddddd;
-$color4: #333333;
-$color5: #070707;
-$color6: #333333;
-$color7: #333333;
-$color8: #333333;
-$color9: #000c00;
-$color10: #dddddd;
+$main-background: #0c111b;
+$main-text-color: #bfbfbf;
+$media-post-background: #332131;// rgb(63, 44, 37);
+$h4-color: #dddddd;
+$a-color: $blue;
+
+$table-background: $main-background;
+$table-row-border: #333333;
+$table-2n-background: #070707;
+$table-header-cell-border: #333333;
+$table-cell-border: $table-header-cell-border;
+
+$search-input-border: #333333;
+$search-input-background: #000c00;
+$share-box-color: #dddddd;
+
 $color11: #121e00;
 $color12: #22004a;
 $color13: #000000;
@@ -31,20 +36,20 @@ $color14: #de690c;
 $color15: #16e19c;
 $color16: #ffffff;
 $bar-color: #333;
-$color18: #6c655e;
-$color19: #6c655e;
+$author-title-color: #6c655e;
+$post-date-color: #6c655e;
 $color20: #cfbcb1;
 $color21: #281b12;
 $color22: rgba(255, 255, 255, 0.08);
 $color23: rgba(255, 255, 255, 0.05);
-$color24: #8a3199;
-$color25: #3fc4bb;
-$color26: #0f35ba;
+$timeline-picture-background: #8a3199;
+$timeline-movie-background: #3fc4bb;
+$timeline-location-background: #0f35ba;
 $color27: rgba(255, 255, 255, .6);
-$color28: #1b1b1b;
+$chip-background: #1b1b1b;
 $color29: #102c06;
-$color30: #ffffff;
-$color31: #ffffff;
+$text-link-color: #ffffff;
+$text-link-border: #ffffff;
 $color32: #191919;
 $color33: hsl(180, 100%, 2%);
 $color34: hsla(180, 100%, 100%, .025);
@@ -75,9 +80,9 @@ html {
 }
 
 body {
-  background: $color0;
+  background: $main-background;
   font-family: -system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  color: $color1;
+  color: $main-text-color;
   line-height: 1.7;
   font-weight: 400;
   font-size: 18px;
@@ -93,7 +98,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: -system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  color: $lightGray;
+  color: $main-text-color;
   font-weight: bold;
 
   line-height: 1.7;
@@ -124,7 +129,7 @@ h2 {
 	    vertical-align: middle;
 	    width: 46px;
 	    height: 1px;
-	    background: $color2;
+	    background: $media-post-background;
 	    margin: 0px 30px;
 	}
 }
@@ -135,7 +140,7 @@ h3 {
 
 h4 {
   font-size: 18px;
-  color: $color3;
+  color: $h4-color;
 }
 
 p {
@@ -147,26 +152,26 @@ table {
 }
 
 table tr {
-	border-top: 1px solid $color4;
-	background-color: black;
+	border-top: 1px solid $table-row-border;
+	background-color: $table-background;
 	margin: 0;
 	padding: 0;
 }
 
 table tr:nth-child(2n) {
-	background-color: $color5;
+	background-color: $table-2n-background;
 }
 
 table tr th {
 	font-weight: bold;
-	border: 1px solid $color6;
+	border: 1px solid $table-header-cell-border;
 	text-align: left;
 	margin: 0;
 	padding: 6px 13px;
 }
 
 table tr td {
-	border: 1px solid $color7;
+	border: 1px solid $table-cell-border;
 	text-align: left;
 	margin: 0;
 	padding: 6px 13px;
@@ -198,16 +203,16 @@ table tr td :last-child {
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid $color8;
+  border: 1px solid $search-input-border;
   border-radius: 4px;
   box-sizing: border-box;
   font-size: 18px;
-  background-color: $color9;
+  background-color: $search-input-background;
 }
 
 .share-box {
   font-weight: bold;
-  color: $color10;
+  color: $share-box-color;
 }
 
 span[data-pullquote] {
@@ -231,11 +236,11 @@ span[data-pullquote]:before {
 }
 
 a {
-  color: $blue;
+  color: $a-color;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color: $a-color;
   }
 }
 
@@ -291,11 +296,11 @@ p > img {
 // Specify the color of the selection
 ::-moz-selection {
   color: $black;
-  background: $lightGray;
+  background: $main-text-color;
 }
 ::selection {
   color: $black;
-  background: $lightGray;
+  background: $main-text-color;
 }
 
 // Nicolas Gallagher's micro clearfix hack
@@ -324,7 +329,7 @@ p > img {
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid $main-text-color;
 
   @include mobile {
     text-align: center;
@@ -363,7 +368,7 @@ p > img {
 
 .site-name {
   margin: 0;
-  color: $lightGray;
+  color: $main-text-color;
   cursor: pointer;
   font-family: $helveticaNeue;
   font-weight: 300;
@@ -401,7 +406,7 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $lightGray;
+    color: $main-text-color;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
@@ -419,7 +424,7 @@ nav {
 
 .posts > .post {
   padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid $main-text-color;
 }
 
 .posts > .post:last-child {
@@ -472,7 +477,7 @@ nav {
   bottom: 0;
   width: 100%;
   height: 89px;
-  background-color: $color0;
+  background-color: $main-background;
 }
 
 footer {
@@ -522,13 +527,13 @@ body:after {
 
 .author_title{
   text-align: center;
-  color: $color18;
+  color: $author-title-color;
   letter-spacing: 2px;
 }
 
 .post_date{
   text-align: center;
-  color: $color19;
+  color: $post-date-color;
 }
 
 .cd-container a {
@@ -639,13 +644,13 @@ Modules - reusable parts of our design
   border-radius: 10px;
 }
 .cd-timeline-img.cd-picture {
-  background: $color24;
+  background: $timeline-picture-background;
 }
 .cd-timeline-img.cd-movie {
-  background: $color25;
+  background: $timeline-movie-background;
 }
 .cd-timeline-img.cd-location {
-  background: $color26;
+  background: $timeline-location-background;
 }
 
 .chip {
@@ -657,7 +662,7 @@ Modules - reusable parts of our design
     line-height: 32px;
     padding: 0 12px;
     border-radius: 16px;
-    background-color: $color28;
+    background-color: $chip-background;
     margin-bottom: 5px;
     margin-right: 5px;
 }
@@ -672,9 +677,9 @@ Modules - reusable parts of our design
 }
 
 .text-link {
-    color: $color30;
+    color: $text-link-color;
     text-decoration: none;
-    border-bottom: 1px dotted $color31;
+    border-bottom: 1px dotted $text-link-border;
 }
 
 //carbon ads
