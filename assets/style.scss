@@ -15,7 +15,7 @@
 
 $main-background: #0c111b;
 $main-text-color: #bfbfbf;
-$media-post-background: #332131;// rgb(63, 44, 37);
+$header-side-bars: #554151;// rgb(63, 44, 37);
 $h4-color: #dddddd;
 $a-color: $blue;
 
@@ -129,7 +129,7 @@ h2 {
 	    vertical-align: middle;
 	    width: 46px;
 	    height: 1px;
-	    background: $media-post-background;
+	    background: $header-side-bars;
 	    margin: 0px 30px;
 	}
 }
