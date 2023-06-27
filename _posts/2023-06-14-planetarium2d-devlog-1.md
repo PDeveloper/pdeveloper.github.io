@@ -4,19 +4,12 @@ title: Planetarium2D - Easy noise-based planets
 categories: [planetarium2d,generation,art]
 ---
 
-[cuprum_iii]: https://i.imgur.com/oAojoRx.png "Cuprum III"
-[arcsin_graph]: https://i.imgur.com/vhHgZDE.png "arcsin"
-[pixel_planet]: https://i.imgur.com/x5RJ7Mr.png "Pixel Planet"
-[early_editor]: https://i.imgur.com/JzweXAL.jpg "Early Editor"
-[curve_editor]: https://i.imgur.com/vZy6gl3.gif "Curve Editor"
-[editor2]: https://i.imgur.com/3EgQ9Gn.png "Editor with Specular and Height"
-
-![Cuprum III][cuprum_iii]
-
 ## Making a Space Game and being Lazy
 I was bored, and at work needed to do some drives to some places where I would be waiting in my car for anywhere from a few minutes to maybe even a couple of hours. I was never a fan of having games on my phone, and over time had some small indie RPGs or strategy games, or my golden standard, Sudoku. Back home, every few months I would dust off the digital version of Heroes of Might and Magic III, and accidentally time travel to 0500 before a full day of work. As one does, I imagined having Heroes III with me on my phone and being able to have a huge game going at all times (Very smart to lean into a dangerously time consuming activity...) I could continue whenever I had a few free minutes.
 
 Obviously, I have to make it myself...
+
+![Cuprum III][cuprum_iii]
 
 So I started the project with Godot. To minimize the amount of art assets I had to create, I decided I was going to go for a Heroes III-like in space. White pixels are stars in the background, easy money. Unit portraits I was able to find a nice set from Kenney assets, and while browsing, he also had a set of planet layers that could be combined to create nice looking planets. But I'm a smart programmer. What if I want to have 100 different planet types? What if I want a lot of different planet sizes and variations on different properties like atmosphere and maybe special resources that are visible, and how cool would it be to have it rotate? I was approaching pre-mature optimization levels of genius.
 
@@ -73,3 +66,10 @@ Links:
 - [Planet2D Github](https://github.com/PDeveloper/Planet2D)
 - [Planetarium2D itch.io](https://pdeveloper.itch.io/planetarium2d)
 - [Gallery](https://pdeveloper.github.io/planetarium2d/)
+
+[cuprum_iii]: https://i.imgur.com/oAojoRx.png "Cuprum III"
+[arcsin_graph]: https://i.imgur.com/vhHgZDE.png "arcsin"
+[pixel_planet]: https://i.imgur.com/x5RJ7Mr.png "Pixel Planet"
+[early_editor]: https://i.imgur.com/JzweXAL.jpg "Early Editor"
+[curve_editor]: https://i.imgur.com/vZy6gl3.gif "Curve Editor"
+[editor2]: https://i.imgur.com/3EgQ9Gn.png "Editor with Specular and Height"
