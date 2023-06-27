@@ -11,9 +11,9 @@ title: Planetarium2D
 [terra_tempuris]: https://i.imgur.com/wjnDdjW.png "Terra Tempuris"
 [terra_tropica]: https://i.imgur.com/ulHfe7m.png "Terra Tropica"
 
-![Au Galactium][au_galactium]
-![Vapora Prima][vapora_prime]
+![Terra Tempuris][terra_tempuris]
 ![Cuprum III][cuprum_iii]
 ![Omega Luciferus][omega_luciferus]
-![Terra Tempuris][terra_tempuris]
+![Au Galactium][au_galactium]
+![Vapora Prima][vapora_prime]
 ![Terra Tropica][terra_tropica]
